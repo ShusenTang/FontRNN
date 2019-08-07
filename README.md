@@ -1,2 +1,2 @@
 # FontRNN
-The code of FontRNN.
+The code of FontRNN. Coming soon...
