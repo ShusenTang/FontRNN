@@ -56,7 +56,7 @@ def get_default_hparams():
         random_scale_factor=0.10,  # Random scaling data augmention proportion.
         augment_stroke_prob=0.10,  # Point dropping augmentation proportion.
         scale_factor=300.0,  # Scale the delta_x and delta_y, constant.
-        rnn_dropout_keep_prob=1.0,  # recurrent dropout keep prob, only used for training
+        rnn_dropout_keep_prob=0.6,  # recurrent dropout keep prob, only used for training
         use_layer_norm=False,
         is_training=True,  # set to False if and only if for testing
         attention_method='LM',  # L: LuongAttention, B: BahdanauAttention, LM: LuongMonotonicAttention, N: not use attention
