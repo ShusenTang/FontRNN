@@ -1,6 +1,6 @@
 # FontRNN
 
-This repository contains the implementation in tensorflow of FontRNN described in our paper FontRNN: Generating Large-scale Chinese Fonts via Recurrent Neural Network (accepted to Computer Graphics Forum (proc. of Pacific Graphics 2019)).
+This repository contains the implementation in tensorflow of FontRNN described in our paper [FontRNN: Generating Large-scale Chinese Fonts via Recurrent Neural Network](https://diglib.eg.org/handle/10.1111/cgf13861) [accepted to Computer Graphics Forum (proc. of Pacific Graphics 2019)].
 
 ## Overview of Paper
 Despite the recent impressive development of deep neural networks, using deep learning based methods to generate large-scale Chinese fonts is still a rather challenging task due to the huge number of intricate Chinese glyphs, e.g., the official standard Chinese charset GB18030-2000 consists of 27,533 Chinese characters. Until now, most existing models for this task adopt Convolutional Neural Networks (CNNs) to generate bitmap images of Chinese characters due to CNN based models’ remarkable success in various application fields. However, CNN based models focus more on image-level features while usually ignore stroke order information when writing characters. Instead, we treat Chinese characters as sequences of points (i.e., writing trajectories) and propose to handle this task via an effective Recurrent Neural Network (RNN) model with monotonic attention mechanism, which can learn from as few as hundreds of training samples and then synthesize glyphs for remaining thousands of characters with the same style. Experiments show that our proposed FontRNN can be used for synthesizing large-scale Chinese fonts as well as generating realistic Chinese handwritings efficiently.
@@ -32,7 +32,15 @@ For copyright reasons, we only provide one font data (FZTLJW.npz) for research (
 ## Citation
 If you use this code or data in your research, please cite us as follows:
 ``` shell
-# TODO
+@article {10.1111:cgf.13861,
+journal = {Computer Graphics Forum},
+title = {{FontRNN: Generating Large-scale Chinese Fonts via Recurrent Neural Network}},
+author = {Tang, Shusen and Xia, Zeqing and Lian, Zhouhui and Tang, Yingmin and Xiao, Jianguo},
+year = {2019},
+publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
+ISSN = {1467-8659},
+DOI = {10.1111/cgf.13861}
+}
 ```
 
 
