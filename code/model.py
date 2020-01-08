@@ -236,7 +236,8 @@ class FontRNN(object):
             if self.hps.attention_method == "N":
                 self.timemajor_alignment_history = tf.ones((self.hps.max_seq_len, self.hps.batch_size, self.hps.max_seq_len))
             else:
-                cell_state, att, time, alignments, alignment_history, attention_state = decoder_final_state
+                # cell_state, att, time, alignments, alignment_history, attention_state = decoder_final_state
+                alignment_history = decoder_final_state[4]
                 # alignment_history is a tensorArray, use stack() to convert it to a tensor
                 self.timemajor_alignment_history = alignment_history.stack()
 
