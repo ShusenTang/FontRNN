@@ -32,14 +32,15 @@ For copyright reasons, we only provide one font data (FZTLJW.npz) for research (
 ## Citation
 If you use this code or data in your research, please cite us as follows:
 ``` shell
-@article {10.1111:cgf.13861,
-journal = {Computer Graphics Forum},
-title = {{FontRNN: Generating Large-scale Chinese Fonts via Recurrent Neural Network}},
-author = {Tang, Shusen and Xia, Zeqing and Lian, Zhouhui and Tang, Yingmin and Xiao, Jianguo},
-year = {2019},
-publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
-ISSN = {1467-8659},
-DOI = {10.1111/cgf.13861}
+@inproceedings{tang2019fontrnn,
+  title={FontRNN: Generating Large-scale Chinese Fonts via Recurrent Neural Network},
+  author={Tang, Shusen and Xia, Zeqing and Lian, Zhouhui and Tang, Yingmin and Xiao, Jianguo},
+  booktitle={Computer Graphics Forum},
+  volume={38},
+  number={7},
+  pages={567--577},
+  year={2019},
+  organization={Wiley Online Library}
 }
 ```
 
